@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.webp">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Hora do Dia</title>
+</head>
+<body onload="carregar()">
+
+  <header>
+    <h1 id="emoji"></h1> 
+  </header>
+
+  <section>
+    <div id="msg"></div>
+    <div id="foto">
+      <img id="imagem" src="img/img manha.webp" alt="Foto dia">
+    </div>
+    <div id="bom"></div>
+  </section>
+
+  <div class="player">
+    <div class="logo">
+      <i class='bx bx-music'></i>
+    </div>
+    <span id="musicName">Nome da Música</span>
+    <div class="controls">
+      <button id="prevButton"><i class='bx bx-skip-previous'></i></button>
+      <button id="playPauseButton"><i class='bx bx-caret-right'></i></button>
+      <button id="nextButton"><i class='bx bx-skip-next'></i></button>
+    </div>
+    <div class="footer">
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <div class="time">
+        <span id="currentTime">0:00</span>
+        <span id="duration">0:00</span>
+      </div>
+    </div>
+    <audio id="player" src=""></audio>
+  </div>
+
+  <script src="script.js"></script>
+  <script type="module" src="song.js"></script>
+
+</body>
+</html>
